@@ -1,0 +1,18 @@
+{
+  "name": "12ft.io automatic redirector",
+  "manifest_version": 3,
+  "version": "1",
+  "description": "Automatically get redirected to the 12ft.io versions of websites",
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "images/12ft-auto-16.png",
+    "32": "images/12ft-auto-32.png",
+    "48": "images/12ft-auto-48.png",
+    "128": "images/12ft-auto-128.png"
+  }
+}
