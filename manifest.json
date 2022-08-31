@@ -1,7 +1,7 @@
 {
   "name": "Paywall removal extention",
   "manifest_version": 3,
-  "version": "6.5",
+  "version": "6.6",
   "description": "Automatically get redirected to a proxed version of news websites, this usually removes paywalls. (previously the 12ft.io version)",
   "permissions": [
     "tabs"
