@@ -13,8 +13,12 @@ async function redirectTo(tab, sourceUrls) {
   for(let i = 0; i < length; i++){
     if (url.includes(sourceUrls[i])) {
       if (!url.includes("https://12ft.durgakiran.dev/proxy?q=")) {
+        if (url.includes("www.thetelegraph.co.uk")) {
+          await chrome.tabs.update(tab.id, {url: "https://txtify.it/" + url.split('?')[0]});
+        } else {
         await chrome.tabs.update(tab.id, { url: "https://12ft.durgakiran.dev/proxy?q=" + url.split('?')[0]});
-       }
+      }
+    }
    }
   }
 }
