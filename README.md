@@ -1,7 +1,9 @@
-# 12ft.io-automatic-redirector
-Automatically get redirected to the 12ft.io versions of websites
+# Paywall remover
+Automatically get redirected to the google cached versions of websites
 
-A basic chrome extension that redirects you automatically to versions of popular news sites without pay walls using the 12ft.io API.
+A basic chrome extension that redirects you automatically to versions of popular news sites without pay walls using the google web cache.
+
+Previously used the 12ft.io API. But that seems to have been shut down.
 
 Please make a pull request or create a issue to request new websites.
 
