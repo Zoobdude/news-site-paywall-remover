@@ -1,4 +1,4 @@
-const SOURCE_URLS = ['https://www.dorsetecho.co.uk', 'https://www.thetimes.co.uk/', 'https://www.theguardian.com', 'https://www.express.co.uk', 'https://www.dailymail.co.uk/', 'https://www.telegraph.co.uk', 'https://www.thesun.co.uk', 'https://www.independent.co.uk', 'https://www.mirror.co.uk', 'https://inews.co.uk', 'businessinsider.com', 'ft.com', 'thetimesweekly.com', 'businessweekly.co.uk', 'bloomberg.com', 'newsweek.com', 'newscientist.com', 'cruiseindustrynews.com', 'superyachtworld.com', 'nytimes.com', 'condenast.com']
+const SOURCE_URLS = ['https://www.dorsetecho.co.uk', 'https://www.thetimes.co.uk/', 'https://www.theguardian.com', 'https://www.express.co.uk', 'https://www.dailymail.co.uk/', 'https://www.telegraph.co.uk', 'https://www.thesun.co.uk', 'https://www.independent.co.uk', 'https://www.mirror.co.uk', 'https://inews.co.uk', 'https://www.businessinsider.com', 'https://www.ft.com', 'https://thetimesweekly.com', 'https://businessweekly.co.uk', 'https://bloomberg.com', 'https://newsweek.com', 'https://newscientist.com', 'https://cruiseindustrynews.com', 'https://superyachtworld.com', 'https://nytimes.com', 'https://condenast.com']
 const ERROR_CANNOT_EDITED = 'Error: Tabs cannot be edited right now (user may be dragging a tab).'
 
 chrome.tabs.onCreated.addListener(tabOnCreated);
@@ -12,8 +12,8 @@ async function redirectTo(tab, sourceUrls) {
   url = tab.url
   for(let i = 0; i < length; i++){
     if (url.includes(sourceUrls[i])) {
-      if (!url.includes("12ft.io")) {
-        await chrome.tabs.update(tab.id, { url: "https://12ft.io/" + url});
+      if (!url.includes("webcache.googleusercontent.com")) {
+        await chrome.tabs.update(tab.id, { url: "https://webcache.googleusercontent.com/search?q=cache:" + url});
        }
    }
   }
