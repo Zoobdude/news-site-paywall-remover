@@ -8,4 +8,4 @@ Previously used the 12ft.io API. But that seems to have been shut down. Then the
 Please make a pull request or create a issue to request new websites.
 
 
-Thanks to Pagorn Phusaisakul and his medium article: [https://nrogap.medium.com/how-to-write-a-chrome-extension-b81218954c7c](https://nrogap.medium.com/how-to-write-a-chrome-extension-b81218954c7c)
+Thanks to Pagorn Phusaisakul and their medium article: [https://nrogap.medium.com/how-to-write-a-chrome-extension-b81218954c7c](https://nrogap.medium.com/how-to-write-a-chrome-extension-b81218954c7c)
