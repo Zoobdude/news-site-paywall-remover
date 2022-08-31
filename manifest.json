@@ -1,8 +1,8 @@
 {
   "name": "Paywall removal extention",
   "manifest_version": 3,
-  "version": "4.5",
-  "description": "Automatically get redirected to the google cached versions of websites, this usually removes paywalls. (previously the 12ft.io version)",
+  "version": "5",
+  "description": "Automatically get redirected to a proxed version of news websites, this usually removes paywalls. (previously the 12ft.io version)",
   "permissions": [
     "tabs"
   ],

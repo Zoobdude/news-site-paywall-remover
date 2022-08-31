@@ -12,8 +12,8 @@ async function redirectTo(tab, sourceUrls) {
   url = tab.url
   for(let i = 0; i < length; i++){
     if (url.includes(sourceUrls[i])) {
-      if (!url.includes("webcache.googleusercontent.com")) {
-        await chrome.tabs.update(tab.id, { url: "https://webcache.googleusercontent.com/search?q=cache:" + url.split('?')[0]});
+      if (!url.includes("https://12ft.durgakiran.dev/proxy?q=")) {
+        await chrome.tabs.update(tab.id, { url: "https://12ft.durgakiran.dev/proxy?q=" + url.split('?')[0]});
        }
    }
   }
