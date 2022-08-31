@@ -13,7 +13,7 @@ async function redirectTo(tab, sourceUrls) {
   for(let i = 0; i < length; i++){
     if (url.includes(sourceUrls[i])) {
       if (!url.includes("webcache.googleusercontent.com")) {
-        await chrome.tabs.update(tab.id, { url: "https://webcache.googleusercontent.com/search?q=cache:" + url});
+        await chrome.tabs.update(tab.id, { url: "https://webcache.googleusercontent.com/search?q=cache:" + url.split('?')[0]});
        }
    }
   }
